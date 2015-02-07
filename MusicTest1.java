@@ -5,9 +5,9 @@ public class MusicTest1 {
 	public void play() {
 		try {
 			Sequencer sequencer = MidiSystem.getSequencer();
-			System.out.print("Успешно плучили синтезатор");
+			System.out.print("Yspeshno polychili sintezator");
 		} catch (MidiUnavailableException ex) {
-			System.out.println("Неудача");
+			System.out.println("Neydacha");
 		}
 	}
 	public static void main(String[] args) {
