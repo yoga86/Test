@@ -27,7 +27,7 @@ public class SimpleAnimation {
 			y++;
 			a++;
 			b++;
-			frame.repaint();
+			drawPanel.repaint();
 			try {
 				Thread.sleep(30);
 			} catch (Exception ex) {}
@@ -35,6 +35,9 @@ public class SimpleAnimation {
 	}
 	class MyDrawPanel extends JPanel {
 	public void paintComponent (Graphics g) {
+		g.setColor(Color.white);
+		g.fillRect(0, 0, this.getWidth(), this.getHeight());
+		
 		g.setColor(Color.green);
 		g.fillOval(x, y, a, b);
 	}
